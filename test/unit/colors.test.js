@@ -21,7 +21,7 @@ describe("colors controller retrieving colors ", () => {
     it("should get json color data", () => {
         colorsContoller.getColors(req, res);
         let data = res._getJSONData();
-        expect(data.colorNameHexCodes).toBeDefined();
+        expect(data.colorNameHexCodes).toBeDefined(); 
         expect(data.colorNames).toBeDefined();
         expect(res._isJSON()).toBeTruthy();
     })
